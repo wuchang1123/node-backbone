@@ -1,0 +1,182 @@
+<div class="slide-layout-title">
+	<h2>产品开发技术分享</h2>
+	<h2>Node.js & Backbone.js</h2>
+</div>
+<hr>
+<div>
+	<h1>高仿真环境开发</h1>
+	<ol>
+		<li>本地创建站点文件夹</li>
+		<li>架设服务器 + host 指向</li>
+		<li>模拟服务端处理、返回html/<a href="/api/test.json">json</a>/其他内容(php,nodejs)</li>
+		<li>使用编辑器的站点功能管理、编辑代码</li>
+		<li>编译（less、模板预编译）、发布</li>
+	</ol>
+</div>
+<hr>
+<div>
+	<h1>高仿真环境好处</h1>
+	<ol>
+		<li>不需等待后端开发的接口</li>
+		<li>域名绑定后还可以直接使用到线上的cookie、避开ajax跨域等问题</li>
+		<li>PC端主机，其他人可以方便访问确认效果</li>
+		<li>可以方便控制返回的数据，查看页面是否破版</li>
+	</ol>
+</div>
+<hr>
+<div>
+	<h1>Node.js</h1>
+	<h2>前端方面可使用的特征、功能</h2>
+	<ul>
+		<li>内核 V8 JavaScript Engine</li>
+		<li>模块划分功能，包管理 <a href="https://npmjs.org/">NPM</a>，大量开源功能代码</li>
+		<li>编译（less、模板预编译）</li>
+		<li>发布命令 (<a href="http://gruntjs.com/">Grunt</a>)</li>
+	</ul>
+</div>
+<hr>
+<div>
+	<h1>Node.js</h1>
+	<h2>对前端好处</h2>
+	<ul>
+		<li>能简单架设本地服务器，不需要学习服务器配置和其他编程语言</li>
+		<li>友好的网址（类似 apache rewrite）</li>
+		<li>编译功能，可以使得css、js可以按照自己想的方式编写</li>
+	</ul>
+</div>
+<hr>
+<div>
+	<h1>安装</h1>
+	<ul>
+		<li>Node.js 有各个系统的安装包 <a href="http://nodejs.org/download/">下载</a></li>
+		<li>npm install 模块名字 [-g]</li>
+		<ul>
+			<li>模块安装，当前项目可以引用</li>
+			<li>可选项 -g 为全局安装，所有项目都可以直接引用</li>
+		</ul>
+	</ul>
+</div>
+<hr>
+<div>
+	<h1>less</h1>
+	<ul>
+		<li>LESS 将 CSS 赋予了动态语言的特性，如 变量， 继承， 运算， 函数. LESS 既可以在 客户端 上运行，也可以借助Node.js/php在服务端运行。</li>
+		<li>建议开发环境使用服务端模式，上线前使用nodejs编译成css发布</li>
+		<li><a href="http://lesscss.org/">官网</a> <a href="http://lesscss.net/">中文站</a></li>
+		<li><a href="/">Demo</a></li>
+	</ul>
+</div>
+<hr>
+<div>
+	<h1>其他</h1>
+	<ul>
+		<li>Node.js文档：<a href="http://nodejs.org/api/">官方最新</a> <a href="http://docs.cnodejs.net/cman/index.html">中文</a></li>
+		<li>Node.js框架：<a href="http://expressjs.com/">express</a></li>
+		<li>简写js：<a href="http://gruntjs.com/">CoffeeScript</a></li>
+		<li>构建工具：<a href="http://coffeescript.org/">Grunt</a></li>
+	</ul>
+</div>
+<hr>
+<div>
+	<h1>Backbone.js</h1>
+	<ul>
+		<li>前端 Web 开发的框架 <a href="http://documentcloud.github.io/backbone/#Introduction">API文档</a></li>
+		<li>Model、Collection</li>
+		<li>View</li>
+		<li>Router、history</li>
+		<li>Events</li>
+		<li>数据同步服务器：sync、ajax，可自定义</li>
+	</ul>
+</div>
+<hr>
+<div>
+	<h1>Backbone.js</h1>
+	<p><img src="/ppt/img/mvc-structure-generic.gif"></p>
+</div>
+<hr>
+<div>
+	<h1>Backbone.js</h1>
+	<ul>
+		<li><a href="http://localhost:3000/employees/app1.html">例子</a> 采用 localStorage 存储数据</li>
+		<li>工具库： <a href="http://underscorejs.org/">underscore.js</a> 提供许多好用的函数，同时也提供类似NTES库带的模板渲染</li>
+	</ul>
+</div>
+<hr>
+<div>
+	<h1>Title</h1>
+	<h2>Subtitle and Bullets</h2>
+	<ul>
+		<li>Titles, and paragraph text are just HTML elements</li>
+		<ul>
+			<li>e.g. <code>h1</code>, <code>h2</code>, <code>p</code></li>
+		</ul>
+		<li>Bullets, of course</li>
+		<ul>
+			<li>nest,</li>
+			<ul>
+				<li>as you'd expect</li>
+			</ul>
+		</ul>
+	</ul>
+</div>
+<hr>
+<div>
+	<h1>Links</h1>
+	<p>Since it's HTML, linking is easy, and means you don't have to jump out of Powerpoint or Keynote to view the link.  The back button works, too ... <a href="http://google.com/">try it</a></p>
+</div>
+<hr>
+<div>
+	<h1>More Links</h1>
+	<p>You can link to other slides, too, and the back button will still work like you think it should.  <a href="#11">Try it</a>.</p>
+</div>
+<hr>
+<div>
+	<h1>Layouts</h1>
+	<h2>Just use CSS</h2>
+	<ul>
+		<li>Layouts are just CSS classes</li>
+		<ul>
+			<li>e.g. <code>slide-layout-title</code></li>
+		</ul>
+		<li>There are a few built-in, as you've seen</li>
+		<li>You can define your own</li>
+	</ul>
+</div>
+<hr>
+<div>
+	<h1>Themes</h1>
+	<h2>You guessed it, CSS</h2>
+	<ul>
+		<li>Themes are also CSS classes</li>
+		<li>You're looking at the 'gray' theme right now</li>
+		<li>You can, of course, define your own</li>
+	</ul>
+</div>
+<hr>
+<div>
+	<h1>Transitions</h1>
+	<h2>CSS again!</h2>
+	<ul>
+		<li>Slide transitions are defined using CSS3</li>
+		<li>This presentation uses the 'fade' transition</li>
+		<li>Can be integrated into a theme or mixed-and-matched</li>
+		<li>And yep, you can define your own</li>
+	</ul>
+</div>
+<hr>
+<div>
+	<h1>Mobile</h1>
+	<h2>Landscape, portrait, touch, swipe</h2>
+	<p>It has mobile viewport support in the builtin template and themes, plus touch and swipe event support for navigation.</p>
+</div>
+<hr>
+<div>
+	<h1>Engineered</h1>
+	<h2>MVC, OOCSS, and AMD</h2>
+	<p>Cutting edge tech, packaged for simplicity.  Use it out of the box, or drop in code for your own slide models, views, and controllers.</p>
+</div>
+<hr>
+<div class="slide-layout-title">
+	<h1>Get it</h1>
+	<h2>Now available on <a href="https://github.com/briancavalier/slides">github</a></h2>
+</div>

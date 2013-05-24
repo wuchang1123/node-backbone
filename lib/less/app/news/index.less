@@ -1,0 +1,20 @@
+@import "config";
+@import "mixins/css3";
+@import "global/reset";
+.box {
+	background: @box-bg-color url(@box-bg-url) no-repeat 10px 10px;
+	.border-radius(6px);
+	margin: 10px;
+	padding-left: 240px;
+	overflow: hidden;
+	.title,
+	&-title {
+		padding: 3px 6px;
+		background: @box-title-bg-color;
+		color: @box-title-color;
+	}
+	.content,
+	&-content {
+		padding-bottom: 15px;
+	}
+}
