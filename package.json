@@ -3,7 +3,6 @@
   "description": "hello world test app",
   "main": "server.js",
   "version": "0.0.1",
-  "private": true,
   "dependencies": {
     "express": "3.x",
     "less": "~1.4.0"

@@ -49,8 +49,9 @@
 	<h1>安装</h1>
 	<ul>
 		<li>Node.js 有各个系统的安装包 <a href="http://nodejs.org/download/">下载</a></li>
-		<li>npm install 模块名字 [-g]</li>
+		<li>npm install [模块名字] [-g]</li>
 		<ul>
+			<li>没有参数，默认读取当前目录的 <a href="/package.json">package.json</a></li>
 			<li>模块安装，当前项目可以引用</li>
 			<li>可选项 -g 为全局安装，所有项目都可以直接引用</li>
 		</ul>
@@ -71,9 +72,9 @@
 	<h1>其他</h1>
 	<ul>
 		<li>Node.js文档：<a href="http://nodejs.org/api/">官方最新</a> <a href="http://docs.cnodejs.net/cman/index.html">中文</a></li>
-		<li>Node.js框架：<a href="http://expressjs.com/">express</a></li>
-		<li>简写js：<a href="http://gruntjs.com/">CoffeeScript</a></li>
-		<li>构建工具：<a href="http://coffeescript.org/">Grunt</a></li>
+		<li>Node.js框架：<a href="http://expressjs.com/">express</a> <a href="http://www.csser.com/board/4f77e6f996ca600f78000936">中文</a></li>
+		<li>简写js：<a href="http://coffeescript.org/">CoffeeScript</a></li>
+		<li>构建工具：<a href="http://gruntjs.com/">Grunt</a></li>
 	</ul>
 </div>
 <hr>
@@ -84,8 +85,22 @@
 		<li>Model、Collection</li>
 		<li>View</li>
 		<li>Router、history</li>
-		<li>Events</li>
+		<li>Events (Model/Collection/View/Router)</li>
 		<li>数据同步服务器：sync、ajax，可自定义</li>
+	</ul>
+</div>
+<hr>
+<div>
+	<h2>数据同步服务器</h2>
+	<ul>
+		<li>sync的设置：emulateHTTP、emulateJSON</li>
+		<ul>
+			<li>建议关闭或<a href="/employees/backbone-localstorage.js">自定义函数</a></li>
+			<li>关闭例子：<br>Backbone.emulateHTTP = true;<br>Backbone.emulateJSON = true;</li>
+			<li>emulateHTTP，默认 RESTful 协议</li>
+			<li>emulateJSON，默认使用`application/json`发请求</li>
+		</ul>
+		<li>ajax 默认使用jQuery的</li>
 	</ul>
 </div>
 <hr>
@@ -97,8 +112,9 @@
 <div>
 	<h1>Backbone.js</h1>
 	<ul>
-		<li><a href="http://localhost:3000/employees/app1.html">例子</a> 采用 localStorage 存储数据</li>
+		<li>默认是使用传递数据给服务器，可以关闭 Backbone.emulateHTTP = true;</li>
 		<li>工具库： <a href="http://underscorejs.org/">underscore.js</a> 提供许多好用的函数，同时也提供类似NTES库带的模板渲染</li>
+		<li><a href="http://localhost:3000/employees/app1.html">例子</a> 采用 localStorage 存储数据</li>
 	</ul>
 </div>
 <hr>
